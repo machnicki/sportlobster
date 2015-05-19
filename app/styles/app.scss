@@ -1,0 +1,18 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+
+@import 'bootstrap-sass-official/assets/stylesheets/bootstrap.scss';
+
+body {
+  background: white;
+}
+
+.events-row {
+  cursor: pointer;
+}
+
+.dl-horizontal {
+
+  dd {
+    margin-bottom: 15px;
+  }
+}

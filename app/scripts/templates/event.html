@@ -1,0 +1,53 @@
+<h1><%- summary %></h1>
+<p class="lead"><%- description %></p>
+
+<br>
+<div class="row">
+    <table class="table table-striped">
+        <tr>
+            <th><strong>Location:</strong></th>
+            <td><%- location %></td>
+        </tr>
+        <tr>
+            <th><strong>Competition:</strong></th>
+            <td><%- competition %></td>
+        </tr>
+        <tr>
+            <th><strong>Event start:</strong></th>
+            <td><%- start_time %></td>
+        </tr>
+        <tr>
+            <th><strong>Event end:</strong></th>
+            <td><%- end_time %></td>
+        </tr>
+        <tr>
+            <th><strong>Commens:</strong></th>
+            <td><%- comment_count %></td>
+        </tr>
+        <tr>
+            <th><strong>Number of predictions:</strong></th>
+            <td><%- prediction_count %></td>
+        </tr>
+        <tr>
+            <th><strong>PREDICTIONS:</strong></th>
+            <td>
+                <dl class="dl-horizontal">
+                <% _.each(prediction_options, function(prediction) { %>
+                    <dt>
+                        <%- prediction.name %>
+                    </dt>
+                    <dd>
+                        Count: <%- prediction.count %> (<%- prediction.percentage %>%)<br/>
+                        <% if(prediction.id !== user_prediction) { %>
+                            <button type="button" class="btn btn-primary predict" data-id="<%- prediction.id %>">predict!</button>
+                        <% } else { %>
+                            <button type="button" class="btn btn-danger unpredict">delete prediction</button>
+                        <% } %>
+                    </dd>
+                <% }); %>
+                </dl>
+            </td>
+        </tr>
+    </table>
+</div>
+<button type="button" class="btn btn-default btn-lg btn-block back-to-list">Back to events list</button>

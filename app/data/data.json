@@ -1,0 +1,164 @@
+[
+   {
+      "id":83887,
+      "_type":"event",
+      "_type_event":true,
+      "summary":"Italy vs Costa Rica",
+      "description":"World Cup",
+      "location":"Arena Pernambuco, Recife",
+      "competition":"World Cup",
+      "start_time":"2014-06-20 16:00:00",
+      "end_time":"2014-06-20 16:00:00",
+      "privacy":"public",
+      "system":true,
+      "prediction_count":1363,
+      "prediction_options":[
+         {
+            "id":190292,
+            "_type":"predictionoption",
+            "_type_predictionoption":true,
+            "count":1191,
+            "name":"Italy",
+            "percentage":87
+         },
+         {
+            "id":190293,
+            "_type":"predictionoption",
+            "_type_predictionoption":true,
+            "count":101,
+            "name":"DRAW",
+            "percentage":7
+         },
+         {
+            "id":190294,
+            "_type":"predictionoption",
+            "_type_predictionoption":true,
+            "count":71,
+            "name":"Costa Rica",
+            "percentage":5
+         }
+      ],
+      "comment_count":1,
+      "like_count":5,
+      "friend_like_count":0,
+      "share_count":0,
+      "url":"http:\/\/sportlobster.com\/event\/83887\/italy-vs-costa-rica",
+      "slug":"italy-vs-costa-rica",
+      "match_type":"Regular",
+      "uid":"football\/731790",
+      "_sport_football":true,
+      "user_prediction":null,
+      "user_can_predict":true,
+      "user_liked":false,
+      "user_shared":false,
+      "live_scores":true
+   },
+   {
+      "id":83888,
+      "_type":"event",
+      "_type_event":true,
+      "summary":"Switzerland vs France",
+      "description":"World Cup",
+      "location":"Arena Fonte Nova, Salvador",
+      "competition":"World Cup",
+      "start_time":"2014-06-20 19:00:00",
+      "end_time":"2014-06-20 19:00:00",
+      "privacy":"public",
+      "system":true,
+      "prediction_count":1142,
+      "prediction_options":[
+         {
+            "id":190295,
+            "_type":"predictionoption",
+            "_type_predictionoption":true,
+            "count":77,
+            "name":"Switzerland",
+            "percentage":7
+         },
+         {
+            "id":190296,
+            "_type":"predictionoption",
+            "_type_predictionoption":true,
+            "count":108,
+            "name":"DRAW",
+            "percentage":9
+         },
+         {
+            "id":190297,
+            "_type":"predictionoption",
+            "_type_predictionoption":true,
+            "count":957,
+            "name":"France",
+            "percentage":84
+         }
+      ],
+      "comment_count":1,
+      "like_count":4,
+      "friend_like_count":0,
+      "share_count":0,
+      "url":"http:\/\/sportlobster.com\/event\/83888\/switzerland-vs-france",
+      "slug":"switzerland-vs-france",
+      "match_type":"Regular",
+      "uid":"football\/731791",
+      "_sport_football":true,
+      "user_prediction":190295,
+      "user_can_predict":true,
+      "user_liked":false,
+      "user_shared":false,
+      "live_scores":true
+   },
+   {
+      "id":83889,
+      "_type":"event",
+      "_type_event":true,
+      "summary":"Honduras vs Ecuador",
+      "description":"World Cup",
+      "location":"Arena da Baixada, Curitiba",
+      "competition":"World Cup",
+      "start_time":"2014-06-20 22:00:00",
+      "end_time":"2014-06-20 22:00:00",
+      "privacy":"public",
+      "system":true,
+      "prediction_count":837,
+      "prediction_options":[
+         {
+            "id":190298,
+            "_type":"predictionoption",
+            "_type_predictionoption":true,
+            "count":33,
+            "name":"Honduras",
+            "percentage":4
+         },
+         {
+            "id":190299,
+            "_type":"predictionoption",
+            "_type_predictionoption":true,
+            "count":127,
+            "name":"DRAW",
+            "percentage":15
+         },
+         {
+            "id":190300,
+            "_type":"predictionoption",
+            "_type_predictionoption":true,
+            "count":677,
+            "name":"Ecuador",
+            "percentage":81
+         }
+      ],
+      "comment_count":2,
+      "like_count":4,
+      "friend_like_count":0,
+      "share_count":0,
+      "url":"http:\/\/sportlobster.com\/event\/83889\/honduras-vs-ecuador",
+      "slug":"honduras-vs-ecuador",
+      "match_type":"Regular",
+      "uid":"football\/731792",
+      "_sport_football":true,
+      "user_prediction":null,
+      "user_can_predict":true,
+      "user_liked":false,
+      "user_shared":false,
+      "live_scores":true
+   }
+]
