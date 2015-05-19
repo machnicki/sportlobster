@@ -37,10 +37,12 @@
                         <%- prediction.name %>
                     </dt>
                     <dd>
-                        Count: <%- prediction.count %> (<%- prediction.percentage %>%)<br/>
+                        Count:
                         <% if(prediction.id !== user_prediction) { %>
+                            <%- prediction.count %> (<%- prediction.percentage %>%)<br/>
                             <button type="button" class="btn btn-primary predict" data-id="<%- prediction.id %>">predict!</button>
                         <% } else { %>
+                            <%- prediction.count + 1 %> (<%- prediction.percentage %>%)<br/>
                             <button type="button" class="btn btn-danger unpredict">delete prediction</button>
                         <% } %>
                     </dd>

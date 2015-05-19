@@ -1,9 +1,17 @@
+// Filename: models/event.js
+
 define([
     'underscore',
     'backbone'
 ], function(_, Backbone) {
     'use strict';
 
+  /**
+   * Events model
+   *
+   * @class Event
+   * @constructor
+   */
     var Event = Backbone.Model.extend({
         //Default data for event model - each data will be visible on table
         default: {
@@ -17,11 +25,16 @@ define([
             'user_prediction': null
         },
 
+        /**
+         * Set new user_prediction value or remove
+         *
+         * @method setPrediction
+         * @param {Integer} id - when undefined, prediction will be removed
+         */
         setPrediction: function(id) {
-            this.save({
+            this.save({ //instead of save
                 'user_prediction': id ? id : null
             });
-            console.log(this.get('user_prediction'));
         }
     });
 

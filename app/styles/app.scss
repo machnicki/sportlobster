@@ -10,6 +10,54 @@ body {
   cursor: pointer;
 }
 
+.table {
+
+  > tbody {
+
+    > tr {
+
+      > td {
+        vertical-align: middle;
+      }
+    }
+  }
+
+  th.sort-by {
+    cursor: pointer;
+  }
+
+  //mark sorting type on table
+  $colorChecked: #5cb85c;
+
+  &.sortedtype_summary {
+
+    .sort-by-summary {
+      color: $colorChecked;
+    }
+  }
+
+  &.sortedtype_competition {
+
+    .sort-by-competition {
+      color: $colorChecked;
+    }
+  }
+
+  &.sortedtype_start_time {
+
+    .sort-by-start_time {
+      color: $colorChecked;
+    }
+  }
+
+  &.sortedtype_prediction_count {
+
+    .sort-by-prediction_count {
+      color: $colorChecked;
+    }
+  }
+}
+
 .dl-horizontal {
 
   dd {

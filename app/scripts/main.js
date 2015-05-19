@@ -6,9 +6,8 @@ require.config({
   paths: {
     jquery: '../bower_components/jquery/dist/jquery',
     underscore: '../bower_components/underscore/underscore',
-    lodash: '../bower_components/lodash/dist/lodash',
     backbone: '../bower_components/backbone/backbone',
-    bootstrap: '../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap',
+    filtered: '../bower_components/backbone-filtered-collection/backbone-filtered-collection',
     text: '../bower_components/requirejs-text/text'
   }
 });

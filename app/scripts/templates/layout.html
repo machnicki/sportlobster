@@ -3,10 +3,10 @@
 <table class="table table-hover">
     <thead>
         <tr>
-            <th>Event name</th>
-            <th>Competition</th>
-            <th>Date</th>
-            <th>Predictions</th>
+            <th class="sort-by sort-by-summary" data-sort="summary">Event name</th>
+            <th class="sort-by sort-by-competition" data-sort="competition">Competition</th>
+            <th class="sort-by sort-by-start_time" data-sort="start_time">Date</th>
+            <th class="sort-by sort-by-prediction_count" data-sort="prediction_count">Predictions</th>
             <th></th>
         </tr>
     </thead>
@@ -14,3 +14,11 @@
 
     </tbody>
 </table>
+<div class="checkbox">
+    <label>
+        <input class="unpredicted-filter" type="checkbox"> Show unpredicted events only
+    </label>
+</div>
+<p>
+    Click on table headline to sort by choosen attribute.
+</p>

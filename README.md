@@ -18,14 +18,11 @@ Code should be nicely structured, no overuse of libraries. Max time : ~ 2h.
 ##UI
 I have used Bootstrap for styling and SASS as a css precompiler.
 
-##Tests
-I would add Jasmine for testing and Karma for automated testing.
-
 ##Documenation
 By YUIDoc. You need to start application (``` npm start ```) to see docs: http://localhost:9000/docs/
 
 ##ToDo
-Minify + beautify
+Minify + beautify + concat js into one file
 
 ##Run the app
 Start the server

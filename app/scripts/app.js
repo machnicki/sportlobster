@@ -1,20 +1,18 @@
-// Filename: main.js
+// Filename: app.js
 'use strict';
 
+/**
+ * First view and routing are triggered
+ *
+ * @class App
+ * @constructor
+ */
 define([
-  'jquery',
-  'lodash',
-  'backbone',
-  'routes/router',
-  'views/app'
-], function($, _, Backbone, AppRouter, AppView) {
+  'routes/router'
+], function(AppRouter) {
 
   var initialize = function() {
-    var appView = new AppView();
-
     AppRouter.initialize();
-
-    appView.render();
   };
 
   return {

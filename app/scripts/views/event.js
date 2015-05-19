@@ -1,3 +1,5 @@
+// Filename: views/event.js
+
 define([
   'jquery',
   'underscore',
@@ -6,8 +8,14 @@ define([
 ], function($, _, Backbone, eventTemplate) {
   'use strict';
 
+  /**
+   * Single event view
+   *
+   * @class EventView
+   * @constructor
+   */
   var EventView = Backbone.View.extend({
-    el: '.container',
+    tagName: 'div',
 
     template: _.template(eventTemplate),
 
@@ -18,20 +26,32 @@ define([
       'click .back-to-list': 'backToList'
     },
 
-    // The EventsView listens for changes to its model
+    /**
+     * The EventView listens for changes to its model
+     *
+     * @method initialize
+     */
     initialize: function() {
       this.listenTo(this.model, 'change', this.render);
     },
 
+    /**
+     * Render event single view
+     *
+     * @method render
+     * @return {Object} EventView
+     */
     render: function() {
+      this.$el.empty();
       this.$el.html(this.template(this.model.toJSON()));
 
       return this;
     },
 
     /**
-     * Set user prediction or remove
-     * @method
+     * Set user prediction
+     *
+     * @method setPrediction
      * @param {Obj} event - ID comes from DOM attr (clicked element)
      */
     setPrediction: function(event) {
@@ -43,15 +63,22 @@ define([
     },
 
     /**
-     * @method
-     * @param {Obj} event
+     * @method removePrediction
+     * @param {Object} event
      */
-    removePrediction: function() {
+    removePrediction: function(event) {
       this.model.setPrediction(null);
+
+      event.stopPropagation();
     },
 
+    /**
+     * Go to events list view
+     *
+     * @method backToList
+     */
     backToList: function() {
-      Backbone.history.navigate('list',{trigger:true, replace: true});
+      Backbone.history.navigate('',{trigger:true, replace: true});
     }
   });
 
