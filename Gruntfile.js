@@ -112,12 +112,22 @@ module.exports = function(grunt) {
           outdir: '<%= config.dir %>/docs/'
         }
       }
+    },
+    exec: {
+      jasmine: {
+        command: 'phantomjs app/test/lib/run-jasmine.js http://0.0.0.0:9000/test',
+        stdout: true
+      }
     }
   });
 
   grunt.registerTask('build', ['sass:app', 'yuidoc', 'requirejs']);
 
   grunt.registerTask('serve', ['connect:livereload', 'open:server', 'watch']);
+
+  //Tests by Jasmine. To run the test you need to have installed PhantomJS - http://phantomjs.org/download.html. On Macs you need to
+  //run command ``` npm install phantomjs -g ```. Run the tests by command ``` grunt tests ```. Before you need to have running application (``` npm start ```).
+  grunt.registerTask('tests', ['exec:jasmine']);
 
   grunt.registerTask('default', ['jshint', 'build', 'serve']);
 };
