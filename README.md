@@ -22,7 +22,7 @@ I have used Bootstrap for styling and SASS as a css precompiler.
 By YUIDoc. You need to start application (``` npm start ```) to see docs: http://localhost:9000/docs/
 
 ##ToDo
-Minify + beautify + concat js into one file
+Minify + concat js into one file. Improve Jasmine tests, with Phantom 2.0 should work.
 
 ##Run the app
 Start the server
