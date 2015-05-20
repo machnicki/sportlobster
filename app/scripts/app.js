@@ -2,7 +2,7 @@
 'use strict';
 
 /**
- * First view and routing are triggered
+ * Routing is triggered
  *
  * @class App
  * @constructor

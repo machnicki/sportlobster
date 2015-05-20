@@ -51,7 +51,7 @@ define([
 
     /**
      * @method removePrediction
-     * @param {Object} event
+     * @param {Object} event - use to stop propagation
      */
     removePrediction: function(event) {
       this.model.setPrediction(null);

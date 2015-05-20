@@ -35,6 +35,7 @@ define([
       this.$eventsList = $('#events-list', this.$template);
 
       this.fetchingCallback = function() {
+        //third part library is using as a wrapper of collection (simple filtering)
         this.filteredCollection = new FilteredCollection(Events);
 
         this.addAll();
@@ -88,7 +89,7 @@ define([
     },
 
     /**
-     * Show only unpredicted events if checked
+     * Show only unpredicted events if .unpredicted-filter is checked
      *
      * @method filterAll
      * @param {Object} event - get state of checkbox
@@ -115,7 +116,7 @@ define([
      * Sorting method
      *
      * @method filterAll
-     * @param {Object} event - get sorting query
+     * @param {Object} event - get sorting query and set it as a comparator
      */
     sortBy: function(event) {
       var $target = $(event.currentTarget),
